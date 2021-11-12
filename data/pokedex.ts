@@ -17069,7 +17069,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		gen: 5,
 	},
 	sussile: {
-		num: 6969,
+		num: 900,
 		name: "Sussile",
 		types: ["Rock", "Steel"],
 		genderRatio: {M: 0.5, F: 0.5},
