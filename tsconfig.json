@@ -1,15 +1,31 @@
 {
     "compilerOptions": {
-        "lib": ["dom", "es6", "es2016.array.include", "es2017.object"],
+        "lib": ["es2019"],
         "noEmit": true,
         "target": "esnext",
-        "module": "None",
-        "jsx": "preserve",
-        "strict": true
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "strict": true,
+        "allowJs": true,
+        "checkJs": true,
+        "incremental": true,
+        "allowUnreachableCode": false
     },
-    "types": [],
+    "types": ["node"],
+    "exclude": [
+        "./.*-dist/**/*",
+    ],
     "include": [
-        "./js/lib/preact.d.ts",
-        "./src/*"
+        "./config/*.ts",
+        "./data/*",
+        "./data/text/*",
+        "./data/mods/*/*",
+        "./dev-tools/*.ts",
+        "./lib/*.ts",
+        "./server/**/*.ts",
+        "./sim/**/*",
+        "./tools/set-import/*.ts",
+        "./tools/modlog/*.ts",
+        "./translations/**/*.ts",
     ]
 }
